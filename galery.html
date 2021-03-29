@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Professional Hairstylist">
+    <meta name="keywords" content="Hairstyle,Mary style,Hairstylist">
+    <meta name="author" content="Mary Dimitrova">
+    <title>Mary Style | Galery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 style="width: 100%; margin: 0; font-family: 'Parisienne';font-size: 70px;text-shadow: 4px 4px 4px #aaa;padding:15px"><span class="highlight">Mary</span> Hairstylist</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="prices.html">Цени</a></li>
+                    <li class="current"><a href="galery.html">Галерия</a></li>
+                    <li><a href="book.php">Запазване на час</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="gallery" id="gallery">
+        <div class="albums">
+            <div class="album-coloring" id="albumColoring">
+                <img src="./img/marystyle/1.jpg" onclick="OpenColoring()" alt="img1">
+                <div class="desc" style="color: darkmagenta; font-size: 25px;">Coloring</div>
+            </div>
+            <div class="album-hairstyles" id="albumHairstyles">
+                <img src="./img/marystyle/16.jpg" onclick="OpenHairstyles()" alt="img16">
+                <div class="desc" style="color: darkmagenta; font-size: 25px;">Hairstyles</div>
+            </div>
+        </div>
+
+            <div class="coloring" id="coloring">
+                <div class="coloring-slideshow">
+                    
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/1.jpg" alt="img1">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/2.jpg" alt="img2">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/3.jpg" alt="img3">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/6.jpg" alt="img6">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/7.jpg" alt="img7">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/33.jpg" alt="img33">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/37.jpg" alt="img37">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/38.jpg" alt="img38">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/40.jpg" alt="img40">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/41.jpg" alt="img41">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/47.jpg" alt="img47">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/48.jpg" alt="img48">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/49.jpg" alt="img49">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/51.jpg" alt="img51">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/52.jpg" alt="img52">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/54.jpg" alt="img54">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/55.jpg" alt="img55">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/56.jpg" alt="img56">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/57.jpg" alt="img57">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/59.jpg" alt="img59">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/60.jpg" alt="img60">
+                        </div>
+                        <div class="coloring-main main">
+                            <img src="./img/marystyle/20.jpg" alt="img20">
+                        </div>
+                   
+
+                    <div class="nav-prev-next">
+                        <span class="arrow prev" onclick="plusSlides(-1)">&#10094;</span>
+                        <span class="arrow next" onclick="plusSlides(1)">&#10095;</span>
+                    </div>
+                
+                </div>
+
+            
+            
+                <div class="coloring-previews">
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="img1">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="img2">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="img3">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/6.jpg" style="width:100%" onclick="currentSlide(4)" alt="img6">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/7.jpg" style="width:100%" onclick="currentSlide(5)" alt="img7">
+                    </div>    
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/33.jpg" style="width:100%" onclick="currentSlide(6)" alt="img33">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/37.jpg" style="width:100%" onclick="currentSlide(7)" alt="img37">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/38.jpg" style="width:100%" onclick="currentSlide(8)" alt="img38">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/40.jpg" style="width:100%" onclick="currentSlide(9)" alt="img40">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="./img/marystyle/41.jpg" style="width:100%" onclick="currentSlide(10)" alt="img41">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/47.jpg" style="width:100%" onclick="currentSlide(11)" alt="img47">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/48.jpg" style="width:100%" onclick="currentSlide(12)" alt="img48">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/49.jpg" style="width:100%" onclick="currentSlide(13)" alt="img49">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/51.jpg" style="width:100%" onclick="currentSlide(14)" alt="img51">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/52.jpg" style="width:100%" onclick="currentSlide(15)" alt="img52">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/54.jpg" style="width:100%" onclick="currentSlide(16)" alt="img54">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/55.jpg" style="width:100%" onclick="currentSlide(17)" alt="img55">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/56.jpg" style="width:100%" onclick="currentSlide(18)" alt="img56">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/57.jpg" style="width:100%" onclick="currentSlide(19)" alt="img57">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/59.jpg" style="width:100%" onclick="currentSlide(20)" alt="img59">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/60.jpg" style="width:100%" onclick="currentSlide(21)" alt="img60">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/marystyle/20.jpg" style="width:100%" onclick="currentSlide(22)" alt="img20">
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="hairstyles" id="hairstyles">
+            
+            <div class="hairstyles-slideshow">
+                    
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/16.jpg" alt="img16">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/4.jpg" alt="img4">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/5.jpg" alt="img5">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/8.jpg" alt="img8">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/9.jpg" alt="img9">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/10.jpg" alt="img10">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/11.jpg" alt="img11">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/12.jpg" alt="img12">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/13.jpg" alt="img13">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/14.jpg" alt="img14">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/15.jpg" alt="img15">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/16.jpg" alt="img16">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/17.jpg" alt="img17">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/18.jpg" alt="img18">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/19.jpg" alt="img19">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/21.jpg" alt="img21">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/22.jpg" alt="img22">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/23.jpg" alt="img23">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/24.jpg" alt="img24">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/25.jpg" alt="img25">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/26.jpg" alt="img26">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/27.jpg" alt="img27">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/28.jpg" alt="img28">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/29.jpg" alt="img29">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/30.jpg" alt="img30">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/31.jpg" alt="img31">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/32.jpg" alt="img32">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/33.jpg" alt="img33">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/34.jpg" alt="img34">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/35.jpg" alt="img35">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/36.jpg" alt="img36">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/39.jpg" alt="img39">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/42.jpg" alt="img42">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/43.jpg" alt="img43">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/44.jpg" alt="img44">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/46.jpg" alt="img46">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/53.jpg" alt="img53">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/54.jpg" alt="img54">
+                </div>
+                <div class="hairstyles-main main">
+                    <img src="./img/marystyle/58.jpg" alt="img58">
+                </div>
+           
+
+            <div class="nav-prev-next">
+                <span class="arrow prev" onclick="plusSlides(-1)">&#10094;</span>
+                <span class="arrow next" onclick="plusSlides(1)">&#10095;</span>
+            </div>
+        
+        </div>
+
+            <div class="hairstyles-previews">
+                <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/16.jpg" style="width:100%" onclick="currentSlide(23)" alt="img16">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/4.jpg" style="width:100%" onclick="currentSlide(24)" alt="img4">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/5.jpg" style="width:100%" onclick="currentSlide(25)" alt="img5">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/8.jpg" style="width:100%" onclick="currentSlide(26)" alt="img8">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/9.jpg" style="width:100%" onclick="currentSlide(27)" alt="img9">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/10.jpg" style="width:100%" onclick="currentSlide(28)" alt="img10">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/11.jpg" style="width:100%" onclick="currentSlide(29)" alt="img11">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/12.jpg" style="width:100%" onclick="currentSlide(30)" alt="img12">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/13.jpg" style="width:100%" onclick="currentSlide(31)" alt="img13">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/14.jpg" style="width:100%" onclick="currentSlide(32)" alt="img14">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/15.jpg" style="width:100%" onclick="currentSlide(33)" alt="img15">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/16.jpg" style="width:100%" onclick="currentSlide(34)" alt="img16">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/17.jpg" style="width:100%" onclick="currentSlide(35)" alt="img17">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/18.jpg" style="width:100%" onclick="currentSlide(36)" alt="img18">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/19.jpg" style="width:100%" onclick="currentSlide(37)" alt="img19">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/21.jpg" style="width:100%" onclick="currentSlide(38)" alt="img21">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/22.jpg" style="width:100%" onclick="currentSlide(39)" alt="img22">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/23.jpg" style="width:100%" onclick="currentSlide(40)" alt="img23">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/24.jpg" style="width:100%" onclick="currentSlide(41)" alt="img24">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/25.jpg" style="width:100%" onclick="currentSlide(42)" alt="img25">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/26.jpg" style="width:100%" onclick="currentSlide(43)" alt="img26">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/27.jpg" style="width:100%" onclick="currentSlide(44)" alt="img27">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/28.jpg" style="width:100%" onclick="currentSlide(45)" alt="img28">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/29.jpg" style="width:100%" onclick="currentSlide(46)" alt="img29">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/30.jpg" style="width:100%" onclick="currentSlide(47)" alt="img30">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/31.jpg" style="width:100%" onclick="currentSlide(48)" alt="img31">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/32.jpg" style="width:100%" onclick="currentSlide(49)" alt="img32">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/33.jpg" style="width:100%" onclick="currentSlide(50)" alt="img33">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/34.jpg" style="width:100%" onclick="currentSlide(51)" alt="img34">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/35.jpg" style="width:100%" onclick="currentSlide(52)" alt="img35">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/36.jpg" style="width:100%" onclick="currentSlide(53)" alt="img36">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/39.jpg" style="width:100%" onclick="currentSlide(54)" alt="img39">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/42.jpg" style="width:100%" onclick="currentSlide(55)" alt="img42">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/43.jpg" style="width:100%" onclick="currentSlide(56)" alt="img43">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/44.jpg" style="width:100%" onclick="currentSlide(57)" alt="img44">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/46.jpg" style="width:100%" onclick="currentSlide(58)" alt="img46">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/53.jpg" style="width:100%" onclick="currentSlide(59)" alt="img53">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/54.jpg" style="width:100%" onclick="currentSlide(60)" alt="img54">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./img/marystyle/58.jpg" style="width:100%" onclick="currentSlide(61)" alt="img58">
+                  </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    
+        <footer>
+            <p>Мери Димитрова, Copyright &copy; <script>document.write(new Date().getFullYear());</script></p>
+        </footer>
+
+        <script src="./js/gallery.js"></script>
+</body>
+
+</html>

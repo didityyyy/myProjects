@@ -1,0 +1,128 @@
+.gallery {
+    width: 90%;
+    margin: 10px auto;
+    min-height: 56vh;
+}
+
+.coloring, .hairstyles {
+    display : none;
+    margin-top: 100px;
+}
+
+.coloring-slideshow, .hairstyles-slideshow {
+    border: 2px solid  rgb(255, 198, 198);
+    height: 400px;
+    overflow: hidden;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  } 
+
+
+
+.coloring-main, .hairstyles-main {
+    height: 400px;
+    margin: auto;
+    animation: fade 1.5s;
+}
+
+.coloring-main img, .hairstyles-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+                0 6px 6px rgba(0,0,0,0.23);
+}
+
+.coloring-previews, .hairstyles-previews {
+    margin-top: 40px;
+    animation: fade 1.5s;
+}
+
+.coloring-previews:after, .hairstyles-previews:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.nav-prev-next .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 50px;
+  -webkit-user-select: none;
+  color:  rgb(219, 168, 168);
+}
+
+.arrow.prev {
+    left: 10px;
+}
+
+.arrow.next {
+    right: 10px;
+}
+
+.arrow.next:hover , 
+.arrow.prev:hover {
+    background-color: rgba(190, 105, 105, 0.87);
+    font-weight: bold;
+}
+
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.album-coloring , .album-hairstyles {
+    margin: 10px;
+    border: 1px solid #ccc;
+    /* float: left; */
+    width: 180px;
+}
+
+.albums {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+.album-coloring:hover, .album-hairstyles:hover {
+    border: 1px solid #777;
+    background-color: rgba(255, 198, 198, 0.87);
+}
+  
+.album-coloring img , .album-hairstyles img {
+    width: 100%;
+    height: auto;
+  }
+
+
+ 
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 10%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    object-fit: contain;
+    height: 100px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
